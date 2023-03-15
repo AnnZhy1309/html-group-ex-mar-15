@@ -10,7 +10,56 @@
 </head>
 
 <body>
+<form action="form-data.html">
+  <div class="form-input-container">
+    <label for="fulname">Your name</label>
+    <input type="text" name="fullname" id="fulname" required>
+    <br>
+    <label for="email">Your email address</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="guest">Will you bring a guest?</label>
+    <select>
+      <option value="yes" name="hasGuest">Yes</option>
+      <option value="no" name="hasGuest">No</option>
+    </select>
+    <input type="submit">
+  </div>
+</form>
 
+<form action="form-data.html">
+  <div class="form-input-container">
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company">
+    <br>
+    <label for="fullname">Full name</label>
+    <input type="text" id="fullname" name="fullname">
+    <br>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title">
+    <br>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+    <br>
+    <label for="selectadate">Select a date</label>
+    <input type="date" id="selectadate" name="selectadate">
+    <br>
+    <label for="jobfunction">Job Function</label>
+    <select name="jobfunction" id="jobfunction" >
+       <option value="projectmanager">Project Manager</option>
+       <option value="backenddeveloper">Backend Developer</option>
+       <option value="frontenddeveloper">Frontend Developer</option>
+       <option value="uxixdesigner">UX/UI Designer</option>
+       <option value="devopsengineer">DevOps engineer</option>
+    </select>
+    <label for="expectations">Expectations</label>
+    <textarea id="expectations" name="expectations" min="10"></textarea>
+    <input type="submit">
+  </div>
+</form>
   <br><br><br>
   <a href="index.html">Back Home</a>
 </body>
